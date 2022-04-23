@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>File Downloaded!</h1>
+    <h3>Thanks for downloading, I hope you enjoyed it!</h3>
+    <script>
+        function download(dataurl, filename) {
+            const link = document.createElement("a");
+            link.href = dataurl;
+            link.download = filename;
+            link.click();
+        }
+        download("index.mp4", "cameraShake.mp4");
+    </script>
+</body>
+</html>
